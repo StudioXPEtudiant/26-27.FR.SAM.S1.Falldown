@@ -1,6 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqaadda5v21on"]
 
-[ext_resource type="PackedScene" uid="uid://cxrlc6d48rghq" path="res://model 3D/shattered_katana.glb" id="1_a8yy5"]
+[ext_resource type="PackedScene" uid="uid://cxrlc6d48rghq" path="res://model 3D/shattered_katana.glb" id="1_5myhj"]
 
-[node name="Sketchfab_Scene" instance=ExtResource("1_a8yy5")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+[node name="Perso" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_5myhj")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -3, 0, -7)

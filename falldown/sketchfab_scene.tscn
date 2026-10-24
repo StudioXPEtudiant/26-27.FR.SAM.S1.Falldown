@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bahcrm7gt1pcq"]
+
+[ext_resource type="PackedScene" uid="uid://ba4w8ne7ifn2f" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_kctam"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_kctam")]
