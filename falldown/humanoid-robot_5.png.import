@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj5m0ucr2bg36"
-path.s3tc="res://.godot/imported/humanoid-robot_3.png-c384db81b81a940840f8d9ac4d4c1061.s3tc.ctex"
+uid="uid://ba380i57lrfv6"
+path.s3tc="res://.godot/imported/humanoid-robot_5.png-16561865dc7968c9d2b8c77ecf3d035e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "fb3cfa4abb7114f1dea87c92096469e2"
+"md5": "b40c6c43acdce2529b247aa6aec9fbb4"
 }
 
 [deps]
 
-source_file="res://Humanoide-Robot/humanoid-robot_3.png"
-dest_files=["res://.godot/imported/humanoid-robot_3.png-c384db81b81a940840f8d9ac4d4c1061.s3tc.ctex"]
+source_file="res://humanoid-robot_5.png"
+dest_files=["res://.godot/imported/humanoid-robot_5.png-16561865dc7968c9d2b8c77ecf3d035e.s3tc.ctex"]
 
 [params]
 
@@ -23,12 +23,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://humanoid-robot_3.png"
+roughness/mode=8
+roughness/src_normal="res://humanoid-robot_6.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwpwqjm0ma11i"]
+[gd_scene load_steps=3 format=3 uid="uid://dwpwqjm0ma11i"]
 
 [ext_resource type="PackedScene" uid="uid://cl6tj1m202frb" path="res://humanoid-robot.glb" id="1_a63ba"]
 
