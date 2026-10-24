@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://ciwg5d6dbfdjw"]
+[gd_scene load_steps=4 format=3 uid="uid://ciwg5d6dbfdjw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ss8ig"]
-size = Vector3(2, 2, 5)
+size = Vector3(10, 0.2, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyrkd"]
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_106i2"]
-size = Vector3(2, 2, 5)
+material = SubResource("StandardMaterial3D_yyrkd")
+size = Vector3(10, 0.2, 10)
 
 [node name="Node3D" type="Node3D"]
 
