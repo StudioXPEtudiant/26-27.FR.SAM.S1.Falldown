@@ -1,13 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0gs5gihrgdq2"]
+[gd_scene load_steps=2 format=3 uid="uid://cqaadda5v21on"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_efgk0"]
+[ext_resource type="PackedScene" uid="uid://cxrlc6d48rghq" path="res://model 3D/shattered_katana.glb" id="1_a8yy5"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_4bxbk"]
-
-[node name="Perso" type="Node3D"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_efgk0")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_4bxbk")
+[node name="Sketchfab_Scene" instance=ExtResource("1_a8yy5")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
