@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqaadda5v21on"]
 
-[ext_resource type="PackedScene" uid="uid://cxrlc6d48rghq" path="res://model 3D/shattered_katana.glb" id="1_5myhj"]
+[ext_resource type="PackedScene" uid="uid://lgigw4amlyox" path="res://model 3D/shattered_katana.glb" id="1_5myhj"]
 
 [node name="Perso" type="Node3D"]
 
