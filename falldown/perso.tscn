@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwpwqjm0ma11i"]
+
+[ext_resource type="PackedScene" uid="uid://cl6tj1m202frb" path="res://humanoid-robot.glb" id="1_a63ba"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uimv5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_a63ba")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene"]
+transform = Transform3D(3.33333, 0, 0, 0, 3.33333, 0, 0, 0, 3.33333, 0, 0, 0)
+shape = SubResource("BoxShape3D_uimv5")
