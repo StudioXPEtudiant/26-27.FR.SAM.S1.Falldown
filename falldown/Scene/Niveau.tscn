@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://ciwg5d6dbfdjw"]
 
-[ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
-[ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
+[ext_resource type="PackedScene" uid="uid://ba4w8ne7ifn2f" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
+[ext_resource type="Texture2D" uid="uid://c8mxlacdmrr2s" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
 [ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://personage.tscn" id="3_578ot"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ss8ig"]
@@ -217,39 +217,39 @@ shadow_mesh = SubResource("ArrayMesh_2o2bl")
 shape = SubResource("BoxShape3D_ss8ig")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, -9.53674e-07, 0)
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, -9.53674e-07, 0)
 mesh = SubResource("BoxMesh_106i2")
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_dj5bf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
 
 [node name="Object_12" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 14.0569)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 0, 0, 14.0569)
 mesh = SubResource("ArrayMesh_stx2a")
 skeleton = NodePath("")
 
 [node name="Object_10" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 20.4916)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 22.3848, 0, 20.4916)
 mesh = SubResource("ArrayMesh_cgwpx")
 skeleton = NodePath("")
 
 [node name="Object_4" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 27.2016)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 40.8965, 0, 27.2016)
 mesh = SubResource("ArrayMesh_ied2o")
 skeleton = NodePath("")
 
 [node name="Object_14" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 0, 0, 33.9046)
+transform = Transform3D(-1.31134e-07, -3, 1.31134e-07, 0, -1.31134e-07, -3, 3, -1.31134e-07, 5.73206e-15, 70.0503, 0, 33.9046)
 mesh = SubResource("ArrayMesh_4ep4w")
 skeleton = NodePath("")
 
 [node name="Object_8" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 41.299)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 10.4529, 0, 41.299)
 mesh = SubResource("ArrayMesh_fud2t")
 skeleton = NodePath("")
 
 [node name="Object_6" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 47.4299)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, -39.8677, 0, 47.4299)
 mesh = SubResource("ArrayMesh_b70gw")
 skeleton = NodePath("")
 
