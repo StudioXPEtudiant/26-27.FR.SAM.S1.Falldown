@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://ciwg5d6dbfdjw"]
+[gd_scene load_steps=20 format=3 uid="uid://ciwg5d6dbfdjw"]
 
 [ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
 [ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
+[ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://personage.tscn" id="3_578ot"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ss8ig"]
 size = Vector3(100, 0.2, 100)
@@ -251,3 +252,9 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 47.4299)
 mesh = SubResource("ArrayMesh_b70gw")
 skeleton = NodePath("")
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("3_578ot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07308, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 5.61943e-08, -6.69697e-08, 0, 0.766044, 0.642788, 8.74228e-08, 0.642788, -0.766044, 0.0200973, 3.48623, -2.00859)
