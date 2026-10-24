@@ -1,8 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://br1lu4fl45knj"]
+[gd_scene load_steps=3 format=3 uid="uid://br1lu4fl45knj"]
+
+[sub_resource type="GDScript" id="GDScript_g32l4"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [sub_resource type="BoxMesh" id="BoxMesh_7utyk"]
 
 [node name="Node3D" type="Node3D"]
+script = SubResource("GDScript_g32l4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 
