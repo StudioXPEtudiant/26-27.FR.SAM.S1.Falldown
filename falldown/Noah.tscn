@@ -1,14 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://7x6dmhdcg3dg"]
+[gd_scene load_steps=4 format=3 uid="uid://7x6dmhdcg3dg"]
+
+[ext_resource type="PackedScene" uid="uid://cl6tj1m202frb" path="res://humanoid-robot.glb" id="1_1j5p5"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tm8y4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_31jtb"]
-size = Vector3(0.0499268, 0.940414, 0.0500488)
+size = Vector3(0.0499268, 0.940414, 0.0499268)
 
 [node name="MeshInstance3D" type="MeshInstance3D"]
 transform = Transform3D(20, 0, 0, 0, 0.2, 0, 0, 0, 20, 0, 0, 0)
 mesh = SubResource("BoxMesh_tm8y4")
 
+[node name="Node3D" type="Node3D" parent="."]
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 0.2, 0, 0, 0, 20, 0.0012207, 0.43389, -0.00244141)
+transform = Transform3D(20, 0, 0, 0, 0.2, 0, 0, 0, 20, 0.0012207, 0.43389, -0.0012207)
 shape = SubResource("BoxShape3D_31jtb")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_1j5p5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05748, 0, 0.106705)
