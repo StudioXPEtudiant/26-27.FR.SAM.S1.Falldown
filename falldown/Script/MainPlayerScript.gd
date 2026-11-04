@@ -37,7 +37,8 @@ func _physics_process(delta):
 	var direction = Vector3(horizontalAxe, 0, -verticalAxe).normalized()
 
 	if direction != Vector3.ZERO:
-		look_at(position - direction)
+		var target_angle = atan2(direction.x, direction.z)
+		rotation.y = lerp_angle(rotation.y, target_angle, 5.0 * delta)
 
 	velocity.x = direction.x * moveSpeed
 	velocity.z = direction.z * moveSpeed

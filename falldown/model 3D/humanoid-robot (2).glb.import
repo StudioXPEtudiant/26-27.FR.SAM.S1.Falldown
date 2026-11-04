@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cl6tj1m202frb"
-path="res://.godot/imported/humanoid-robot.glb-0d1f72de8420fdda24acec3e6d1c9f17.scn"
+path="res://.godot/imported/humanoid-robot (2).glb-abd107dd08a07a3787bfd8783be7b29e.scn"
 
 [deps]
 
-source_file="res://humanoid-robot.glb"
-dest_files=["res://.godot/imported/humanoid-robot.glb-0d1f72de8420fdda24acec3e6d1c9f17.scn"]
+source_file="res://model 3D/humanoid-robot (2).glb"
+dest_files=["res://.godot/imported/humanoid-robot (2).glb-abd107dd08a07a3787bfd8783be7b29e.scn"]
 
 [params]
 

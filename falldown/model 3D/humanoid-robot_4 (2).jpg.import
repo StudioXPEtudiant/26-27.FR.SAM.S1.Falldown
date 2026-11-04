@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s8v4pyyfhjdg"
-path.s3tc="res://.godot/imported/humanoid-robot_0.jpg-9341c28cfa04176a35e3dc3f596e627e.s3tc.ctex"
+uid="uid://b5fjhusnlx7wp"
+path.s3tc="res://.godot/imported/humanoid-robot_4 (2).jpg-d4ae56351a3700a844f59f820021b631.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "4b68343949d9f471a598e00a3de9e185"
+"md5": "d1dd210d6b1312cb342b56d02bd5e651"
 }
 
 [deps]
 
-source_file="res://humanoid-robot_0.jpg"
-dest_files=["res://.godot/imported/humanoid-robot_0.jpg-9341c28cfa04176a35e3dc3f596e627e.s3tc.ctex"]
+source_file="res://model 3D/humanoid-robot_4 (2).jpg"
+dest_files=["res://.godot/imported/humanoid-robot_4 (2).jpg-d4ae56351a3700a844f59f820021b631.s3tc.ctex"]
 
 [params]
 

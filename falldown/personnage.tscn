@@ -1,29 +1,29 @@
 [gd_scene load_steps=16 format=3 uid="uid://dj3q5qg54ajud"]
 
-[ext_resource type="Script" path="res://MainPlayerScript.gd" id="1_8hnfq"]
-[ext_resource type="Texture2D" uid="uid://s8v4pyyfhjdg" path="res://humanoid-robot_0.jpg" id="1_ggl18"]
-[ext_resource type="Texture2D" uid="uid://bbo2l7i8qduo" path="res://humanoid-robot_1.png" id="2_0aobx"]
-[ext_resource type="Texture2D" uid="uid://5pii23qkavi6" path="res://humanoid-robot_2.jpg" id="3_7xecb"]
-[ext_resource type="Texture2D" uid="uid://cj5m0ucr2bg36" path="res://humanoid-robot_3.png" id="4_8tbid"]
-[ext_resource type="Texture2D" uid="uid://b5fjhusnlx7wp" path="res://humanoid-robot_4.jpg" id="5_rpttn"]
-[ext_resource type="Texture2D" uid="uid://ba380i57lrfv6" path="res://humanoid-robot_5.png" id="6_tr57s"]
-[ext_resource type="Texture2D" uid="uid://cs6n82mgp30qf" path="res://humanoid-robot_6.png" id="7_vvjny"]
+[ext_resource type="Script" path="res://Script/MainPlayerScript.gd" id="1_xwuu1"]
+[ext_resource type="Texture2D" uid="uid://s8v4pyyfhjdg" path="res://model 3D/humanoid-robot_0 (2).jpg" id="2_yb6me"]
+[ext_resource type="Texture2D" uid="uid://bbo2l7i8qduo" path="res://model 3D/humanoid-robot_1 (2).png" id="3_mqk8n"]
+[ext_resource type="Texture2D" uid="uid://5pii23qkavi6" path="res://model 3D/humanoid-robot_2 (2).jpg" id="4_hjb23"]
+[ext_resource type="Texture2D" uid="uid://cj5m0ucr2bg36" path="res://model 3D/humanoid-robot_3 (2).png" id="5_5oq7t"]
+[ext_resource type="Texture2D" uid="uid://b5fjhusnlx7wp" path="res://model 3D/humanoid-robot_4 (2).jpg" id="6_8jc0o"]
+[ext_resource type="Texture2D" uid="uid://ba380i57lrfv6" path="res://model 3D/humanoid-robot_5 (2).png" id="7_i5c2d"]
+[ext_resource type="Texture2D" uid="uid://cs6n82mgp30qf" path="res://model 3D/humanoid-robot_6 (2).png" id="8_ho8aq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktq2c"]
 resource_name = "body"
 cull_mode = 2
-albedo_texture = ExtResource("1_ggl18")
+albedo_texture = ExtResource("2_yb6me")
 metallic = 1.0
-metallic_texture = ExtResource("2_0aobx")
+metallic_texture = ExtResource("3_mqk8n")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("2_0aobx")
+roughness_texture = ExtResource("3_mqk8n")
 roughness_texture_channel = 1
 emission_enabled = true
-emission_texture = ExtResource("3_7xecb")
+emission_texture = ExtResource("4_hjb23")
 normal_enabled = true
-normal_texture = ExtResource("4_8tbid")
+normal_texture = ExtResource("5_5oq7t")
 ao_enabled = true
-ao_texture = ExtResource("2_0aobx")
+ao_texture = ExtResource("3_mqk8n")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_uw3iu"]
 _surfaces = [{
@@ -62,16 +62,16 @@ shadow_mesh = SubResource("ArrayMesh_uw3iu")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_su6x0"]
 resource_name = "glass"
 cull_mode = 2
-albedo_texture = ExtResource("5_rpttn")
+albedo_texture = ExtResource("6_8jc0o")
 metallic = 1.0
-metallic_texture = ExtResource("6_tr57s")
+metallic_texture = ExtResource("7_i5c2d")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("6_tr57s")
+roughness_texture = ExtResource("7_i5c2d")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("7_vvjny")
+normal_texture = ExtResource("8_ho8aq")
 ao_enabled = true
-ao_texture = ExtResource("6_tr57s")
+ao_texture = ExtResource("7_i5c2d")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5k347"]
 _surfaces = [{
@@ -111,7 +111,7 @@ shadow_mesh = SubResource("ArrayMesh_5k347")
 size = Vector3(1, 1, 2)
 
 [node name="Sketchfab_Scene" type="CharacterBody3D"]
-script = ExtResource("1_8hnfq")
+script = ExtResource("1_xwuu1")
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)

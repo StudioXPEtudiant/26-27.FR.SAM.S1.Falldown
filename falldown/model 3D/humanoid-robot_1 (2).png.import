@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbo2l7i8qduo"
-path.s3tc="res://.godot/imported/humanoid-robot_1.png-65704589509da96b8af4afde8c167e6e.s3tc.ctex"
+path.s3tc="res://.godot/imported/humanoid-robot_1 (2).png-c8971370605a37a016c5b9a39f6ea02d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://humanoid-robot_1.png"
-dest_files=["res://.godot/imported/humanoid-robot_1.png-65704589509da96b8af4afde8c167e6e.s3tc.ctex"]
+source_file="res://model 3D/humanoid-robot_1 (2).png"
+dest_files=["res://.godot/imported/humanoid-robot_1 (2).png-c8971370605a37a016c5b9a39f6ea02d.s3tc.ctex"]
 
 [params]
 

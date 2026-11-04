@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://ciwg5d6dbfdjw"]
+[gd_scene load_steps=23 format=3 uid="uid://ciwg5d6dbfdjw"]
 
 [ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
 [ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
 [ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://personnage.tscn" id="3_578ot"]
+[ext_resource type="Script" path="res://Scene/CameraPivot.gd" id="4_84tnw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fyhge"]
 
@@ -268,8 +269,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.00952, 0)
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Sketchfab_Scene2"]
 shape = SubResource("BoxShape3D_nsq0u")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.671341, -0.245426, -0.699334, -0.169962, -0.969415, 0.17705, -0.721398, -8.20139e-08, -0.692521, 153.162, 129.42, 0)
+[node name="CameraPivot" type="Node3D" parent="Sketchfab_Scene2" node_paths=PackedStringArray("target")]
+script = ExtResource("4_84tnw")
+target = NodePath("..")
+smooth_speed = 2.0
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 5.61943e-08, -6.69697e-08, 0, 0.766044, 0.642788, 8.74228e-08, 0.642788, -0.766044, 0.0200973, 3.48623, -2.00859)
+[node name="Camera3D" type="Camera3D" parent="Sketchfab_Scene2/CameraPivot"]
+transform = Transform3D(-1, 5.61943e-08, -6.69697e-08, 4.13225e-08, 0.978896, 0.20436, 7.70402e-08, 0.20436, -0.978896, 0.0200973, 0.95136, -3.39106)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.671341, -0.245426, -0.699334, -0.169962, -0.969415, 0.17705, -0.721398, -6.39257e-07, -0.692521, 153.162, 129.42, 0)
