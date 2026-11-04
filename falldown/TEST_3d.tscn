@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2yppobxs41cf"]
+
+[sub_resource type="Sky" id="Sky_66vb2"]
+
+[sub_resource type="Environment" id="Environment_cj0wl"]
+background_mode = 2
+sky = SubResource("Sky_66vb2")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_232it"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_cj0wl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_232it")
