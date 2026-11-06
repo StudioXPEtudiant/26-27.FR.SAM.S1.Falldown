@@ -318,8 +318,9 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, -0.00462723, 0.0010376, -4.31007)
 shape = SubResource("BoxShape3D_3jw1p")
 
-[node name="Sketchfab_Scene2" parent="." instance=ExtResource("3_578ot")]
+[node name="Sketchfab_Scene2" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("3_578ot")]
 transform = Transform3D(-0.00136136, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00136136, -74.0803, 2.00952, 0)
+camera = NodePath("CameraPivot/Camera3D")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Sketchfab_Scene2"]
 shape = SubResource("BoxShape3D_nsq0u")
@@ -327,10 +328,9 @@ shape = SubResource("BoxShape3D_nsq0u")
 [node name="CameraPivot" type="Node3D" parent="Sketchfab_Scene2" node_paths=PackedStringArray("target")]
 script = ExtResource("4_84tnw")
 target = NodePath("..")
-smooth_speed = 2.0
 
 [node name="Camera3D" type="Camera3D" parent="Sketchfab_Scene2/CameraPivot"]
-transform = Transform3D(-1, 5.61943e-08, -6.69697e-08, 4.13225e-08, 0.978896, 0.20436, 7.70402e-08, 0.20436, -0.978896, 0.0200973, 0.95136, -3.39106)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.671341, -0.245426, -0.699334, -0.169962, -0.969415, 0.17705, -0.721398, -8.9781e-07, -0.692521, 153.162, 129.42, 0)
