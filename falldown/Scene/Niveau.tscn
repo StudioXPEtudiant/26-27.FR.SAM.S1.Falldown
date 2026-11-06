@@ -1,9 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://ciwg5d6dbfdjw"]
+[gd_scene load_steps=29 format=3 uid="uid://ciwg5d6dbfdjw"]
 
 [ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
 [ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
 [ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://personnage.tscn" id="3_578ot"]
-[ext_resource type="Script" path="res://Scene/CameraPivot.gd" id="4_84tnw"]
+[ext_resource type="Script" path="res://Script/CameraPivot.gd" id="4_84tnw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fyhge"]
 
@@ -54,6 +54,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_g87l0")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_looh0"]
+size = Vector3(3.07031, 3.05212, 9.0983)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_olj5h"]
 _surfaces = [{
 "aabb": AABB(-1.86752, -1.81417, -5.63467, 2.80429, 3.62833, 5.63523),
@@ -85,6 +88,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_olj5h")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tp028"]
+size = Vector3(2.73389, 3.6333, 4.91254)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6ieee"]
 _surfaces = [{
@@ -118,6 +124,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6ieee")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccriw"]
+size = Vector3(2.84656, 3.75912, 6.91455)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_11clk"]
 _surfaces = [{
 "aabb": AABB(-2.17034, -0.927829, -9.78282, 4.34069, 1.85566, 9.78136),
@@ -149,6 +158,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_11clk")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cqo2l"]
+size = Vector3(4.08813, 1.84395, 9.54333)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_r0gkb"]
 _surfaces = [{
@@ -182,6 +194,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_r0gkb")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_jv46b"]
+size = Vector3(2.65878, 2.48389, 13.8794)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_2o2bl"]
 _surfaces = [{
 "aabb": AABB(-1.56754, -0.934129, -8.5863, 3.13508, 1.86827, 8.592),
@@ -214,6 +229,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2o2bl")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_3jw1p"]
+size = Vector3(3.18411, 1.87415, 8.56763)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_nsq0u"]
 size = Vector3(1, 2, 1)
 
@@ -231,37 +249,74 @@ mesh = SubResource("BoxMesh_106i2")
 skeleton = NodePath("../..")
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_dj5bf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 108.256)
 
 [node name="Object_12" type="MeshInstance3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 0, 0, 14.0569)
+transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 0, 1, 14)
 mesh = SubResource("ArrayMesh_stx2a")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_12"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, 0, -4.76837e-07, -9.96319)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_12/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.52034)
+shape = SubResource("BoxShape3D_looh0")
 
 [node name="Object_10" type="MeshInstance3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 22.3848, 0, 20.4916)
 mesh = SubResource("ArrayMesh_cgwpx")
 skeleton = NodePath("")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_10"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_10/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, -0.418, 0, -2.5)
+shape = SubResource("BoxShape3D_tp028")
+
 [node name="Object_4" type="MeshInstance3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 40.8965, 0, 27.2016)
 mesh = SubResource("ArrayMesh_ied2o")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, 0.439, 0.003, -3.5)
+shape = SubResource("BoxShape3D_ccriw")
 
 [node name="Object_14" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.31134e-07, -3, 1.31134e-07, 0, -1.31134e-07, -3, 3, -1.31134e-07, 5.73206e-15, 70.0503, 0, 33.9046)
 mesh = SubResource("ArrayMesh_4ep4w")
 skeleton = NodePath("")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_14"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_14/StaticBody3D"]
+transform = Transform3D(1, -7.10543e-15, 2.25099e-19, 7.10543e-15, 1, -7.10543e-15, 0, 7.10543e-15, 1, -0.0329981, 0.00300407, -4.8299)
+shape = SubResource("BoxShape3D_cqo2l")
+
 [node name="Object_8" type="MeshInstance3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 10.4529, 0, 41.299)
 mesh = SubResource("ArrayMesh_fud2t")
 skeleton = NodePath("")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_8/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, -0.0289371, -0.143799, -6.97692)
+shape = SubResource("BoxShape3D_jv46b")
+
 [node name="Object_6" type="MeshInstance3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, -39.8677, 0, 47.4299)
 mesh = SubResource("ArrayMesh_b70gw")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_6/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, -0.00462723, 0.0010376, -4.31007)
+shape = SubResource("BoxShape3D_3jw1p")
 
 [node name="Sketchfab_Scene2" parent="." instance=ExtResource("3_578ot")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.00952, 0)
