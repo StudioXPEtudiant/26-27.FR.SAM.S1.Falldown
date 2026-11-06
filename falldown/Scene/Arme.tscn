@@ -5,4 +5,4 @@
 [node name="Perso" type="Node3D"]
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_5myhj")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -3, 0, -7)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
