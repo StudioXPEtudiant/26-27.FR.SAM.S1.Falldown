@@ -154,10 +154,9 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
 shape = SubResource("BoxShape3D_x3phk")
 
-[node name="CameraPivot" type="Node3D" parent="." node_paths=PackedStringArray("target")]
+[node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, 0, 0)
 script = ExtResource("9_0gj03")
-target = NodePath("")
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(-1, -0.00068068, -0.000182474, -0.000680724, 0.866025, 0.5, -0.000182312, 0.5, -0.866026, 0, 3, -6)
