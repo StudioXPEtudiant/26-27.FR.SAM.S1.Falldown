@@ -17,4 +17,4 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 4.39112, 4.15622, 7.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2508, 9.53674e-07, 18.5603)
 
 [node name="Sketchfab_Scene4" parent="." instance=ExtResource("4_gvr8i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4546, 0, 40.0814)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5335, 3.96355, 38.9071)
