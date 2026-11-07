@@ -331,7 +331,7 @@ script = ExtResource("4_84tnw")
 target = NodePath("..")
 
 [node name="Camera3D" type="Camera3D" parent="perso/CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+transform = Transform3D(-1, -0.00068068, -0.000182474, -0.000680724, 0.866025, 0.5, -0.000182312, 0.5, -0.866026, 0, 3, -6)
 
 [node name="épée" parent="perso" instance=ExtResource("5_udpca")]
 transform = Transform3D(-0.0152343, -0.0198222, -0.0433013, -0.0264799, -0.034261, 0.025, -0.039582, 0.0305494, -5.8951e-05, -0.527828, -0.0612533, 0.165359)
