@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cg6uxcqj8wo3p"]
+[gd_scene load_steps=4 format=3 uid="uid://cg6uxcqj8wo3p"]
 
 [ext_resource type="PackedScene" uid="uid://c2up4i2hmf46x" path="res://model 3D/star_wars_buildings_coruscant.glb" id="1_7lkb4"]
 [ext_resource type="PackedScene" uid="uid://lgigw4amlyox" path="res://model 3D/shattered_katana.glb" id="2_jlph8"]
 [ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="3_t3cnl"]
-[ext_resource type="PackedScene" uid="uid://cra0kag2vjr8x" path="res://model 3D/humanoid_robot_v3.glb" id="4_gvr8i"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -11,10 +10,7 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3654, -1.19209e-07, -2.69363)
 
 [node name="Sketchfab_Scene2" parent="." instance=ExtResource("2_jlph8")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 4.39112, 4.15622, 7.66153)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 4.39112, 4.15622, 27.8446)
 
 [node name="Sketchfab_Scene3" parent="." instance=ExtResource("3_t3cnl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2508, 9.53674e-07, 18.5603)
-
-[node name="Sketchfab_Scene4" parent="." instance=ExtResource("4_gvr8i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5335, 3.96355, 38.9071)
