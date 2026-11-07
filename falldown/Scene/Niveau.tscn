@@ -236,7 +236,7 @@ size = Vector3(3.18411, 1.87415, 8.56763)
 [sub_resource type="BoxShape3D" id="BoxShape3D_nsq0u"]
 size = Vector3(1, 2, 1)
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_fyhge")
