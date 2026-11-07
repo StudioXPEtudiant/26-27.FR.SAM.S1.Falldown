@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://qaynbmu0ahtb"]
+
+[ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://Scene/personnage.tscn" id="1_005sm"]
+[ext_resource type="Script" path="res://Script/CameraPivot.gd" id="2_sflgu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rdr6j"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4jxqm"]
+material = SubResource("StandardMaterial3D_rdr6j")
+size = Vector3(10, 0.2, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eeo7x"]
+size = Vector3(10, 0.2, 10)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_4jxqm")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_eeo7x")
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("1_005sm")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.20439, 0)
+
+[node name="CameraPivot" type="Node3D" parent="Sketchfab_Scene2" node_paths=PackedStringArray("target")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, 0, 0)
+script = ExtResource("2_sflgu")
+target = NodePath("..")
+
+[node name="Camera3D" type="Camera3D" parent="Sketchfab_Scene2/CameraPivot"]
+transform = Transform3D(-1, -0.00068068, -0.000182474, -0.000680724, 0.866025, 0.5, -0.000182312, 0.5, -0.866026, 0, 3, -6)

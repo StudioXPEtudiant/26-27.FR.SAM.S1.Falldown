@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 class_name MainPlayerScript
 
-@export var camera: Camera3D
+@onready var camera: Camera3D = get_node_or_null("CameraPivot/Camera3D")
 @export var moveSpeed:float = 5
 @export var numPlayer:int = 1
 @export var jumpPrecision:float = 1
@@ -25,7 +25,9 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-
+	
+	if camera == null:
+		return
 	var horizontalAxe = Input.get_axis(
 		"J" + str(_GetNumPlayer()) + "_Right",
 		"J" + str(_GetNumPlayer()) + "_Left"
