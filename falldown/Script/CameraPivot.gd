@@ -26,17 +26,17 @@ func _process(delta):
 	global_position = target.global_position + Vector3.UP * followHeight
 
 	# Rotation horizontale
-	if Input.is_action_pressed("CamRight"):
+	if Input.is_action_pressed("CamLeft"):
 		yaw -= cameraSpeed * delta
 
-	if Input.is_action_pressed("CamLeft"):
+	if Input.is_action_pressed("CamRight"):
 		yaw += cameraSpeed * delta
 
 	# Rotation verticale
-	if Input.is_action_pressed("CamUp"):
+	if Input.is_action_pressed("CamDown"):
 		pitch += cameraSpeed * delta
 
-	if Input.is_action_pressed("CamDown"):
+	if Input.is_action_pressed("CamUp"):
 		pitch -= cameraSpeed * delta
 
 	# Limiter la rotation verticale
