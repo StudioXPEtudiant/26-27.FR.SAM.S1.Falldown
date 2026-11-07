@@ -108,8 +108,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5k347")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_x3phk"]
-size = Vector3(1, 1, 2)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s0riy"]
+radius = 0.560309
+height = 2.0962
 
 [node name="Sketchfab_Scene" type="CharacterBody3D"]
 script = ExtResource("1_xwuu1")
@@ -151,8 +152,8 @@ mesh = SubResource("ArrayMesh_fvjm8")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
-shape = SubResource("BoxShape3D_x3phk")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0226372, -0.0203638)
+shape = SubResource("CapsuleShape3D_s0riy")
 
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, 0, 0)
