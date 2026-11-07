@@ -1,10 +1,10 @@
 [gd_scene load_steps=32 format=3 uid="uid://ciwg5d6dbfdjw"]
 
-[ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_dj5bf"]
-[ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="2_jeoar"]
-[ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://Scene/personnage.tscn" id="3_578ot"]
-[ext_resource type="Script" path="res://Script/CameraPivot.gd" id="4_84tnw"]
-[ext_resource type="Script" path="res://Scene/teleport zone.gd" id="5_rjhyh"]
+[ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_1d6yg"]
+[ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://Scene/personnage.tscn" id="2_bvwf3"]
+[ext_resource type="Script" path="res://Script/CameraPivot.gd" id="3_xanjx"]
+[ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="4_dgtin"]
+[ext_resource type="Script" path="res://Script/teleport zone.gd" id="5_12r51"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fyhge"]
 
@@ -21,7 +21,7 @@ size = Vector3(20, 0.2, 10)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fy3iv"]
 resource_name = "concrete"
 cull_mode = 2
-albedo_texture = ExtResource("2_jeoar")
+albedo_texture = ExtResource("4_dgtin")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_olj5h"]
 _surfaces = [{
@@ -256,19 +256,19 @@ transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, -9.53674e-07, 0)
 mesh = SubResource("BoxMesh_106i2")
 skeleton = NodePath("../..")
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_dj5bf")]
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_1d6yg")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -12, 0, 655.469)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.671341, -0.245426, -0.699334, -0.169962, -0.969415, 0.17705, -0.721398, -8.9781e-07, -0.692521, 153.162, 129.42, 0)
 
-[node name="Sketchfab_Scene2" parent="." instance=ExtResource("3_578ot")]
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("2_bvwf3")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -187.491, 1.49694, 0)
 moveSpeed = 100.0
 
 [node name="CameraPivot" type="Node3D" parent="Sketchfab_Scene2" node_paths=PackedStringArray("target")]
 transform = Transform3D(1, 0, 0, 0, 1, -4.37114e-08, 0, 4.37114e-08, 1, 0, 0, 0)
-script = ExtResource("4_84tnw")
+script = ExtResource("3_xanjx")
 target = NodePath("..")
 
 [node name="Camera3D" type="Camera3D" parent="Sketchfab_Scene2/CameraPivot"]
@@ -378,7 +378,7 @@ shape = SubResource("BoxShape3D_3jw1p")
 
 [node name="teleport zone" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -162.998, 2.68584, 44.0502)
-script = ExtResource("5_rjhyh")
+script = ExtResource("5_12r51")
 next_scene = "res://décharge.tscn"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="teleport zone"]
