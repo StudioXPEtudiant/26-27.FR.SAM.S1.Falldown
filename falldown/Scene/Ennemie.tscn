@@ -74,7 +74,6 @@ transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
 transform = Transform3D(100, 0, 0, 0, -1.62921e-05, 100, 0, -100, -1.62921e-05, 0, 153.335, 12.592)
 
 [node name="CHR_R_redBetsu_CHR_R_redBetsu_MAT_0" type="MeshInstance3D" parent="Sketchfab_model/07130120dadc491bb80955fc88eeb068_fbx/RootNode/CHR_R_redBetsu"]
-transform = Transform3D(1, 0, 0, 0, 1, 1.42109e-14, 0, -1.42109e-14, 1, 0, 0, 0)
 sorting_offset = 10.0
 sorting_use_aabb_center = false
 extra_cull_margin = 10.0
