@@ -117,6 +117,7 @@ height = 1.0
 radius = 0.75
 
 [node name="Sketchfab_Scene" type="CharacterBody3D"]
+collision_mask = 3
 script = ExtResource("1_xwuu1")
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
