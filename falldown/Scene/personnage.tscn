@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dj3q5qg54ajud"]
+[gd_scene load_steps=18 format=3 uid="uid://dj3q5qg54ajud"]
 
 [ext_resource type="Script" path="res://Script/MainPlayerScript.gd" id="1_xwuu1"]
 [ext_resource type="Texture2D" uid="uid://s8v4pyyfhjdg" path="res://model 3D/humanoid-robot_0 (2).jpg" id="2_yb6me"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5fjhusnlx7wp" path="res://model 3D/humanoid-robot_4 (2).jpg" id="6_8jc0o"]
 [ext_resource type="Texture2D" uid="uid://ba380i57lrfv6" path="res://model 3D/humanoid-robot_5 (2).png" id="7_i5c2d"]
 [ext_resource type="Texture2D" uid="uid://cs6n82mgp30qf" path="res://model 3D/humanoid-robot_6 (2).png" id="8_ho8aq"]
+[ext_resource type="Script" path="res://Script/Hurt.gd" id="9_cokks"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktq2c"]
 resource_name = "body"
@@ -159,7 +160,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0226372, -0.0203638)
 shape = SubResource("CapsuleShape3D_s0riy")
 
 [node name="Area3DAttack" type="Area3D" parent="."]
+script = ExtResource("9_cokks")
 
 [node name="CollisionShapeAttack" type="CollisionShape3D" parent="Area3DAttack"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.328201, 0)
 shape = SubResource("CylinderShape3D_0a24l")
+
+[connection signal="body_entered" from="Area3DAttack" to="Area3DAttack" method="_on_body_entered"]
