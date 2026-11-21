@@ -59,7 +59,7 @@ shadow_mesh = SubResource("ArrayMesh_ewpiu")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
-transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, 0.01, 0, -0.01, -4.37114e-10, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model"]
 transform = Transform3D(100, 0, 0, 0, -5.46392e-06, -100, 0, 125, -4.37114e-06, 0, -12.744, 105.563)
