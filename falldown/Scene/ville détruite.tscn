@@ -1,10 +1,11 @@
-[gd_scene load_steps=32 format=3 uid="uid://ciwg5d6dbfdjw"]
+[gd_scene load_steps=33 format=3 uid="uid://ciwg5d6dbfdjw"]
 
 [ext_resource type="PackedScene" uid="uid://dqmne28v3p6hn" path="res://model 3D/ruined_buildings_pack_-_free_download.glb" id="1_1d6yg"]
 [ext_resource type="PackedScene" uid="uid://dj3q5qg54ajud" path="res://Scene/personnage.tscn" id="2_bvwf3"]
 [ext_resource type="Script" path="res://Script/CameraPivot.gd" id="3_xanjx"]
 [ext_resource type="Texture2D" uid="uid://cdvbnnhyhth6b" path="res://model 3D/ruined_buildings_pack_-_free_download_0.png" id="4_dgtin"]
 [ext_resource type="Script" path="res://Script/teleport zone.gd" id="5_12r51"]
+[ext_resource type="PackedScene" uid="uid://bk7k5gwbqq8ot" path="res://Scene/Ennemie.tscn" id="6_inqag"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fyhge"]
 
@@ -386,3 +387,6 @@ shape = SubResource("BoxShape3D_4njjd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="teleport zone"]
 mesh = SubResource("BoxMesh_gnjqh")
+
+[node name="Sketchfab_Scene4" parent="." instance=ExtResource("6_inqag")]
+transform = Transform3D(-5.24537e-10, 0, -0.012, 0, 0.012, 0, 0.012, 0, -5.24537e-10, -181.36, 0.0999999, -1.51064)
