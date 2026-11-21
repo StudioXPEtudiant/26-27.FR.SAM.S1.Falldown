@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dj3q5qg54ajud"]
+[gd_scene load_steps=17 format=3 uid="uid://dj3q5qg54ajud"]
 
 [ext_resource type="Script" path="res://Script/MainPlayerScript.gd" id="1_xwuu1"]
 [ext_resource type="Texture2D" uid="uid://s8v4pyyfhjdg" path="res://model 3D/humanoid-robot_0 (2).jpg" id="2_yb6me"]
@@ -111,6 +111,10 @@ shadow_mesh = SubResource("ArrayMesh_5k347")
 radius = 0.560309
 height = 2.0962
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0a24l"]
+height = 1.0
+radius = 0.75
+
 [node name="Sketchfab_Scene" type="CharacterBody3D"]
 script = ExtResource("1_xwuu1")
 
@@ -153,3 +157,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0226372, -0.0203638)
 shape = SubResource("CapsuleShape3D_s0riy")
+
+[node name="Area3DAttack" type="Area3D" parent="."]
+
+[node name="CollisionShapeAttack" type="CollisionShape3D" parent="Area3DAttack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.328201, 0)
+shape = SubResource("CylinderShape3D_0a24l")
